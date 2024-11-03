@@ -1,3 +1,4 @@
+// Selecting elements
 const textInput = document.getElementById("text-input");
 const countBtn = document.getElementById("count-btn");
 const result = document.getElementById("result");
@@ -13,6 +14,7 @@ const sampleText = `A character counter is a helpful tool in web applications, e
     Character counters benefit both users and developers by making form limits clear and easy to follow. They prevent common frustrations associated with character overflow, improve usability, and give forms a polished, professional look by adding an extra layer of feedback and guidance for users.
 `;
 
+// Initial input value
 textInput.value = sampleText;
 
 // Count functionality
@@ -29,6 +31,7 @@ textInput.addEventListener("input", () => {
   if (textInput.value === "") result.textContent = "";
 });
 
+// Clear functionality 
 document.getElementById("clear-btn").addEventListener("click", () => {
   textInput.value = "";
   result.textContent = "";
