@@ -15,6 +15,7 @@ const sampleText = `A character counter is a helpful tool in web applications, e
 
 textInput.value = sampleText;
 
+// Count functionality
 function count() {
   const inputValue = textInput.value;
   if (inputValue === "") return;
